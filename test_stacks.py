@@ -4,6 +4,7 @@ from stacks import StacksList, EmptyStackException
 class TestStacks(unittest.TestCase):
     def setUp(self):
         self.S = StacksList()
+  
     def test_emptyStack(self):
         self.assertEqual(len(self.S),0)
         self.assertTrue(self.S.isEmpty())
