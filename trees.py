@@ -39,6 +39,15 @@
 # Maximum number of nodes at level i is 2's power i
 # Maximum number of nodes in a tree with height h is "2 (power : h+1) - 1"
 
+# ARRAY Based Implementation for Binary Trees
+#An alternative representation of a binary tree T is based on a way of numbering the
+#positions of T. For every position p of T, let f (p) be the integer defined as follows.
+#• If p is the root of T, then f (p) = 0.
+#• If p is the left child of position q, then f (p) = 2 f (q)+1.
+#• If p is the right child of position q, then f (p) = 2 f (q)+2.
+#The numbering function f is known as a level numbering of the positions in a
+#binary tree T, for it numbers the positions on each level of T in increasing order
+#from left to right
 
 class Tree(object):
     """Abstract Base Class for Tree Data Structure"""
